@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="create_new">
+      <p><%= link_to '+新規追加', '/bookmarks/new' %></p>
+    </div>
+  
+  <% if flash[:notice] %>
+    <div class="index_flash">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
+  
+  <% @bookmarks.each do |book| %>
+    <div class="bookmark_info">
+      <h1><%= link_to book.title, book.url %></h1>
+      <p>面白さ：<%= book.interest %></p>
+      <%= link_to '表示', "/bookmarks/#{book.id}" %>
+      <%= link_to '編集', "/bookmarks/#{book.id}/edit" %>
+      <div class="delete_botan"><%= link_to '削除', "/bookmarks/#{book.id}", data: {turbo_method: :delete} %></div>
+    </div>
+  <% end %>
+
+  
+</div>
+
+

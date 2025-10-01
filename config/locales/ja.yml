@@ -1,0 +1,21 @@
+ja:
+  activerecord:
+    attributes:
+      bookmark:
+        title: "タイトル名"
+        url: "URL"
+        interest: "面白さ"
+    
+    errors:
+      models:
+        bookmark:
+          attributes:
+            title:
+              blank: "は必ず入力してください"
+              taken: "は既に使用されています"
+              too_lang: "は50文字以内で入力してください"
+            url:
+              blank: "は必ず入力してください"
+              invalid: "は正しい形式で入力してください"
+            interest:
+              blank: "は必ず入力してください"

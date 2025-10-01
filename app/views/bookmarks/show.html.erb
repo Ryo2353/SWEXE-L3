@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="bookmark_info">
+    <div class="font_big">
+      <p>
+        <strong>タイトル：</strong>
+        <%= @bookmark.title %>
+      </p>
+      
+      <p>
+        <strong>URL：</strong>
+        <%= @bookmark.url %>
+      </p>
+      
+      <p>
+        <strong>面白さ：</strong>
+        <%= @bookmark.interest %>
+      </p>
+    </div>
+    
+    <div class="back_botan">
+      <%= link_to 'Back', '/' %>
+    </div>
+    
+  </div>
+</div>

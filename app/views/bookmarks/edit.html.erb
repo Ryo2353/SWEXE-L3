@@ -1,0 +1,34 @@
+<div class="errors_message">
+  <% if @bookmark.errors.present? %>
+  <h3>エラーがあります。</h3>
+  <ul>
+    <% @bookmark.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+  <% end %>
+</div>
+  
+  
+<div class="container_new">
+  <%= form_with model: @bookmark do |f| %>
+    <div class="bookmark_new_info">
+    　<h1><%= f.label :title, 'タイトル' %></h1>
+    　<div class="info_item"><%= f.text_field :title %></div>
+    　  
+    　<h1><%= f.label :url, 'URL' %></h1>
+    　<div class="info_item"><%= f.text_field :url %></div>
+    　 
+    　<h1><%= f.label :url, '面白さ' %></h1>
+    　<div class="info_item"><%= f.text_field :interest %></div>
+    </div>
+    
+    <div class="submit_botan">
+      <%= f.submit '更新' %>
+    </div>
+  <% end %>
+  <div class="back_botan">
+    <%= link_to 'Back', '/' %>
+  </div>
+</div>
+
