@@ -16,9 +16,9 @@
       <div class="bookmark_info">
         <h1><%= link_to book.title, book.url %></h1>
         <p>面白さ：<%= book.interest %></p>
-        <%= link_to '表示', "/bookmarks/#{book.id}" %>
-        <%= link_to '編集', "/bookmarks/#{book.id}/edit" %>
-        <div class="delete_botan"><%= link_to '削除', "/bookmarks/#{book.id}", data: {turbo_method: :delete} %></div>
+        <%= link_to '表示', bookmark_path(book) %>
+        <%= link_to '編集', edit_bookmark_path(book) %>
+        <div class="delete_botan"><%= link_to '削除', bookmark_path(book), data: {turbo_method: :delete} %></div>
       </div>
     <% end %>
   <% end %>
