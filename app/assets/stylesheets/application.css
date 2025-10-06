@@ -8,3 +8,139 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-content, .header_content {
+    display: flex;
+}
+
+.main-content {
+    min-height: 500px;
+}
+
+.app_title {
+    margin: 0 auto;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #eee;
+    font-size: 120%;
+}
+
+.sidebar a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.sidebar a:hover {
+    background-color: #45a049;
+}
+
+.content {
+    width: 75%;
+}
+
+.container_root {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.center_h2 {
+    text-align: center;
+}
+
+.container_new {
+    width: 90%;
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.no_bookmarks {
+    text-align: center;
+    font-size: 120%;
+}
+
+.errors_message {
+    max-width:400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.errors_message h3 {
+    color: red;
+}
+
+.create_new {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.submit_botan {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.delete_botan, .back_botan{
+    text-align: right;
+    padding: 0 10px 10px 0;
+}
+
+.bookmark_info {
+    margin: 30px 0;
+    padding-left: 30px;
+    border: 3mm ridge rgba(102, 187, 106, 0.6);
+}
+
+.font_big {
+    font-size: 150%;
+}
+
+.bookmark_info p {
+    padding-left: 20px;
+}
+
+.bookmark_info h1 {
+    font-size: 150%;
+}
+
+.bookmark_new_info {
+    margin: 30px 0;
+    padding-left: 10px;
+}
+
+.bookmark_new_info h1 {
+    font-size: 120%;
+    margin-bottom: 0;
+}
+
+.bookmark_new_info p {
+    margin-top: 0px;
+}
+
+.info_item {
+    margin-bottom: 20px;
+}
+
+.index_flash {
+    color: #43d138;
+}
